@@ -56,6 +56,17 @@ import { Agent } from '@strands-agents/sdk'
 import { makeSleep } from '@strands-agents/sdk/vended-tools/sleep'
 // --8<-- [end:sleep_custom_import]
 
+// --8<-- [start:python_repl_import]
+import { Agent } from '@strands-agents/sdk'
+import { pythonRepl } from '@strands-agents/sdk/vended-tools/python-repl'
+// --8<-- [end:python_repl_import]
+
+// --8<-- [start:python_repl_custom_import]
+import { Agent } from '@strands-agents/sdk'
+import { DockerSandbox } from '@strands-agents/sdk/sandbox/docker'
+import { makePythonRepl } from '@strands-agents/sdk/vended-tools/python-repl'
+// --8<-- [end:python_repl_custom_import]
+
 // --8<-- [start:stop_import]
 import { Agent } from '@strands-agents/sdk'
 import { stop } from '@strands-agents/sdk/experimental/vended-tools/stop'
@@ -98,3 +109,16 @@ import { Agent } from '@strands-agents/sdk'
 import { Choice, Option, Preset } from '@strands-agents/sdk/multiagent'
 import { makeSubagent } from '@strands-agents/sdk/vended-tools/subagent'
 // --8<-- [end:subagent_custom_import]
+
+// --8<-- [start:swarm_import]
+import { Agent } from '@strands-agents/sdk'
+import { swarm } from '@strands-agents/sdk/vended-tools/swarm'
+// --8<-- [end:swarm_import]
+
+// --8<-- [start:swarm_custom_import]
+import { Agent } from '@strands-agents/sdk'
+import { Choice, Fixed, Inherit, Preset } from '@strands-agents/sdk/multiagent'
+import { makeSwarm } from '@strands-agents/sdk/vended-tools/swarm'
+import { httpRequest } from '@strands-agents/sdk/vended-tools/http-request'
+import { webFetch } from '@strands-agents/sdk/vended-tools/web-fetch'
+// --8<-- [end:swarm_custom_import]
